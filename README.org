@@ -30,3 +30,32 @@ l5を適宜変更してから実行
 #+begin_src shell
 python word2txt.py
 #+end_src
+** =logo_injection.py=
+画像の四隅にロゴを貼り付けます。
+
+l47-l61を適宜変更してから実行
+#+begin_src shell
+python logo_injection.py
+#+end_src
+** =prefix_image.py=
+画像のファイル名にprefixをつけます。
+
+l16を適宜変更してから実行
+#+begin_src shell
+python prefix_image.py
+#+end_src
+** =resize_image.py=
+画像のサイズを変更します。
+
+l10-12を適宜変更してから実行
+#+begin_src shell
+python resize_image.py
+#+end_src
+** whisper.py
+whisperで動画をテキストに変換します。
+
+l4を適宜変更してから実行
+#+begin_src shell
+python whisper.py
+#+end_src
+

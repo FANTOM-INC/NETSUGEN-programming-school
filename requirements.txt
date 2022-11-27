@@ -4,3 +4,4 @@ pyocr
 pdf2image
 pdfminer.six
 openpyxl
+numpy
