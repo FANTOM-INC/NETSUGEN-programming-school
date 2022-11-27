@@ -1,0 +1,24 @@
+* 使い方
+** excel.py
+#+begin_src shell
+python excel.py
+#+end_src
+** find_file.py
+l92-93を適宜変更してから実行
+#+begin_src shell
+python find_file.py
+#+end_src
+** pdf2txt.py
+#+begin_src shell
+python pdf2txt.py ./sample_file/sample.pdf
+#+end_src
+** pdf_ocr.py
+l37を適宜変更してから実行
+#+begin_src shell
+python pdf_ocr.py
+#+end_src
+** word2txt.py
+l5を適宜変更してから実行
+#+begin_src shell
+python word2txt.py
+#+end_src
