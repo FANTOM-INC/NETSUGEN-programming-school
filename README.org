@@ -1,23 +1,31 @@
 * 使い方
 ** excel.py
+excelを読み込み、データを取得したり書き込んだりします。
 #+begin_src shell
 python excel.py
 #+end_src
 ** =find_file.py=
+file, pdf, excel, wordの文章を検索して、与えた文字列が含まれているファイルを表示します。
+
 l92-93を適宜変更してから実行
 #+begin_src shell
 python find_file.py
 #+end_src
 ** pdf2txt.py
+pdfをテキストに変換します。
 #+begin_src shell
 python pdf2txt.py ./sample_file/sample.pdf
 #+end_src
 ** =pdf_ocr.py=
+pdfを画像として読み込みOCRしてテキストに変換します。
+
 l37を適宜変更してから実行
 #+begin_src shell
 python pdf_ocr.py
 #+end_src
 ** word2txt.py
+wordをテキストに変換します。
+
 l5を適宜変更してから実行
 #+begin_src shell
 python word2txt.py

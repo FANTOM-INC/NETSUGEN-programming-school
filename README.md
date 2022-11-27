@@ -1,54 +1,64 @@
 
 # Table of Contents
 
-1.  [使い方](#orgcd635f9)
-    1.  [excel.py](#org8e4258f)
-    2.  [`find_file.py`](#org4ede04b)
-    3.  [pdf2txt.py](#org7921354)
-    4.  [`pdf_ocr.py`](#org5f0d4d4)
-    5.  [word2txt.py](#org35d9785)
+1.  [使い方](#orgbc78676)
+    1.  [excel.py](#org4f538a1)
+    2.  [`find_file.py`](#org2700b99)
+    3.  [pdf2txt.py](#orgdef1d30)
+    4.  [`pdf_ocr.py`](#org40c74da)
+    5.  [word2txt.py](#org6c307d0)
 
 
-<a id="orgcd635f9"></a>
+<a id="orgbc78676"></a>
 
 # 使い方
 
 
-<a id="org8e4258f"></a>
+<a id="org4f538a1"></a>
 
 ## excel.py
+
+excelを読み込み、データを取得したり書き込んだりします。
 
     python excel.py
 
 
-<a id="org4ede04b"></a>
+<a id="org2700b99"></a>
 
 ## `find_file.py`
+
+file, pdf, excel, wordの文章を検索して、与えた文字列が含まれているファイルを表示します。
 
 l92-93を適宜変更してから実行
 
     python find_file.py
 
 
-<a id="org7921354"></a>
+<a id="orgdef1d30"></a>
 
 ## pdf2txt.py
+
+pdfをテキストに変換します。
 
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="org5f0d4d4"></a>
+<a id="org40c74da"></a>
 
 ## `pdf_ocr.py`
+
+pdfを画像として読み込みOCRしてテキストに変換します。
 
 l37を適宜変更してから実行
 
     python pdf_ocr.py
 
 
-<a id="org35d9785"></a>
+<a id="org6c307d0"></a>
 
 ## word2txt.py
+
+wordをテキストに変換します。
 
 l5を適宜変更してから実行
 
