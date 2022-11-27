@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import os
 from pathlib import Path
 from docx import Document
 
-path = Path.cwd() / "sample.docx"
+path = Path.cwd() / "sample_file/sample.docx"
 document = Document(path)
 text = ''
 
