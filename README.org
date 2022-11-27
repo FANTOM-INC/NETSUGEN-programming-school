@@ -3,7 +3,7 @@
 #+begin_src shell
 python excel.py
 #+end_src
-** find_file.py
+** =find_file.py=
 l92-93を適宜変更してから実行
 #+begin_src shell
 python find_file.py
@@ -12,7 +12,7 @@ python find_file.py
 #+begin_src shell
 python pdf2txt.py ./sample_file/sample.pdf
 #+end_src
-** pdf_ocr.py
+** =pdf_ocr.py=
 l37を適宜変更してから実行
 #+begin_src shell
 python pdf_ocr.py
