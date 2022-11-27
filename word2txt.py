@@ -4,7 +4,7 @@ from pathlib import Path
 from docx import Document
 
 path = Path.cwd() / "sample_file/sample.docx"
-document = Document(path)
+document = Document(path.as_posix())
 text = ''
 
 # 本文中のテキスト抽出
