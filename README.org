@@ -82,3 +82,10 @@ pdfをテキストに変換し、wordcloudを作成します。
 #+begin_src shell
 python pdf2wordcloud.py
 #+end_src
+** txt2wordcloud.py
+文字列をwordcloudに変換します。
+
+l7を適宜変更してから実行
+#+begin_src shell
+python txt2wordcloud.py
+#+end_src

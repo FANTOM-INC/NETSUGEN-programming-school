@@ -1,21 +1,22 @@
 
 # Table of Contents
 
-1.  [事前にやること](#org32e1408)
-2.  [使い方](#orgd9b26f8)
-    1.  [excel.py](#orged2e4f4)
-    2.  [`find_file.py`](#org9cca2dd)
-    3.  [pdf2txt.py](#orgdd1346d)
-    4.  [`pdf_ocr.py`](#orgf80cec9)
-    5.  [word2txt.py](#org7875080)
-    6.  [`logo_injection.py`](#org334358b)
-    7.  [`prefix_image.py`](#org497a39d)
-    8.  [`resize_image.py`](#org9201f82)
-    9.  [whisper.py](#orge53382a)
-    10. [pdf2wordcloud.py](#org88f3be1)
+1.  [事前にやること](#org4a844e4)
+2.  [使い方](#orgc5ef180)
+    1.  [excel.py](#org1165adc)
+    2.  [`find_file.py`](#org09c0e4e)
+    3.  [pdf2txt.py](#orge341e4f)
+    4.  [`pdf_ocr.py`](#orgd20b8e8)
+    5.  [word2txt.py](#orga6380d9)
+    6.  [`logo_injection.py`](#org8f17568)
+    7.  [`prefix_image.py`](#org7dc2b95)
+    8.  [`resize_image.py`](#org86f8310)
+    9.  [whisper.py](#orgbc1af5c)
+    10. [pdf2wordcloud.py](#org895a988)
+    11. [txt2wordcloud.py](#org7fda382)
 
 
-<a id="org32e1408"></a>
+<a id="org4a844e4"></a>
 
 # 事前にやること
 
@@ -35,12 +36,12 @@ JUMAN++をインストールする
 その後requirements.txtをpip3 installする
 
 
-<a id="orgd9b26f8"></a>
+<a id="orgc5ef180"></a>
 
 # 使い方
 
 
-<a id="orged2e4f4"></a>
+<a id="org1165adc"></a>
 
 ## excel.py
 
@@ -49,7 +50,7 @@ excelを読み込み、データを取得したり書き込んだりします。
     python excel.py
 
 
-<a id="org9cca2dd"></a>
+<a id="org09c0e4e"></a>
 
 ## `find_file.py`
 
@@ -60,7 +61,7 @@ l92-93を適宜変更してから実行
     python find_file.py
 
 
-<a id="orgdd1346d"></a>
+<a id="orge341e4f"></a>
 
 ## pdf2txt.py
 
@@ -69,7 +70,7 @@ pdfをテキストに変換します。
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="orgf80cec9"></a>
+<a id="orgd20b8e8"></a>
 
 ## `pdf_ocr.py`
 
@@ -80,7 +81,7 @@ l37を適宜変更してから実行
     python pdf_ocr.py
 
 
-<a id="org7875080"></a>
+<a id="orga6380d9"></a>
 
 ## word2txt.py
 
@@ -91,7 +92,7 @@ l5を適宜変更してから実行
     python word2txt.py
 
 
-<a id="org334358b"></a>
+<a id="org8f17568"></a>
 
 ## `logo_injection.py`
 
@@ -102,7 +103,7 @@ l47-l61を適宜変更してから実行
     python logo_injection.py
 
 
-<a id="org497a39d"></a>
+<a id="org7dc2b95"></a>
 
 ## `prefix_image.py`
 
@@ -113,7 +114,7 @@ l16を適宜変更してから実行
     python prefix_image.py
 
 
-<a id="org9201f82"></a>
+<a id="org86f8310"></a>
 
 ## `resize_image.py`
 
@@ -124,7 +125,7 @@ l10-12を適宜変更してから実行
     python resize_image.py
 
 
-<a id="orge53382a"></a>
+<a id="orgbc1af5c"></a>
 
 ## whisper.py
 
@@ -135,11 +136,22 @@ l4を適宜変更してから実行
     python whisper.py
 
 
-<a id="org88f3be1"></a>
+<a id="org895a988"></a>
 
 ## pdf2wordcloud.py
 
 pdfをテキストに変換し、wordcloudを作成します。
 
     python pdf2wordcloud.py
+
+
+<a id="org7fda382"></a>
+
+## txt2wordcloud.py
+
+文字列をwordcloudに変換します。
+
+l7を適宜変更してから実行
+
+    python txt2wordcloud.py
 
