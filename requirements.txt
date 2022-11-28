@@ -6,3 +6,6 @@ openpyxl
 numpy
 python-docx
 pathlib
+pyknp
+matplotlib
+wordcloud
