@@ -1,24 +1,36 @@
 
 # Table of Contents
 
-1.  [使い方](#org702ee60)
-    1.  [excel.py](#org9400666)
-    2.  [`find_file.py`](#orga8daf51)
-    3.  [pdf2txt.py](#orgfe82f70)
-    4.  [`pdf_ocr.py`](#orge83727f)
-    5.  [word2txt.py](#org6259b53)
-    6.  [`logo_injection.py`](#org66329e3)
-    7.  [`prefix_image.py`](#org87300e6)
-    8.  [`resize_image.py`](#orgd0a8269)
-    9.  [whisper.py](#org1ce62fe)
+1.  [事前にやること](#org7fd144f)
+2.  [使い方](#orge00bb7f)
+    1.  [excel.py](#orgbb08c6f)
+    2.  [`find_file.py`](#orgd882d10)
+    3.  [pdf2txt.py](#orgc38738b)
+    4.  [`pdf_ocr.py`](#orgd2fe6b6)
+    5.  [word2txt.py](#org5242f5c)
+    6.  [`logo_injection.py`](#org4031c4f)
+    7.  [`prefix_image.py`](#orgbd46297)
+    8.  [`resize_image.py`](#org65a1c50)
+    9.  [whisper.py](#orgf61f609)
 
 
-<a id="org702ee60"></a>
+<a id="org7fd144f"></a>
+
+# 事前にやること
+
+    sudo apt-get install libjpeg-dev
+    sudo apt-get install -y poppler-utils
+    sudo apt -y install tesseract-ocr tesseract-ocr-jpn libtesseract-dev libleptonica-dev tesseract-ocr-script-jpan tesseract-ocr-script-jpan-vert 
+
+その後requirements.txtをpip3 installする
+
+
+<a id="orge00bb7f"></a>
 
 # 使い方
 
 
-<a id="org9400666"></a>
+<a id="orgbb08c6f"></a>
 
 ## excel.py
 
@@ -27,7 +39,7 @@ excelを読み込み、データを取得したり書き込んだりします。
     python excel.py
 
 
-<a id="orga8daf51"></a>
+<a id="orgd882d10"></a>
 
 ## `find_file.py`
 
@@ -38,7 +50,7 @@ l92-93を適宜変更してから実行
     python find_file.py
 
 
-<a id="orgfe82f70"></a>
+<a id="orgc38738b"></a>
 
 ## pdf2txt.py
 
@@ -47,7 +59,7 @@ pdfをテキストに変換します。
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="orge83727f"></a>
+<a id="orgd2fe6b6"></a>
 
 ## `pdf_ocr.py`
 
@@ -58,7 +70,7 @@ l37を適宜変更してから実行
     python pdf_ocr.py
 
 
-<a id="org6259b53"></a>
+<a id="org5242f5c"></a>
 
 ## word2txt.py
 
@@ -69,7 +81,7 @@ l5を適宜変更してから実行
     python word2txt.py
 
 
-<a id="org66329e3"></a>
+<a id="org4031c4f"></a>
 
 ## `logo_injection.py`
 
@@ -80,7 +92,7 @@ l47-l61を適宜変更してから実行
     python logo_injection.py
 
 
-<a id="org87300e6"></a>
+<a id="orgbd46297"></a>
 
 ## `prefix_image.py`
 
@@ -91,7 +103,7 @@ l16を適宜変更してから実行
     python prefix_image.py
 
 
-<a id="orgd0a8269"></a>
+<a id="org65a1c50"></a>
 
 ## `resize_image.py`
 
@@ -102,7 +114,7 @@ l10-12を適宜変更してから実行
     python resize_image.py
 
 
-<a id="org1ce62fe"></a>
+<a id="orgf61f609"></a>
 
 ## whisper.py
 
