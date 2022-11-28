@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     # WordCloud
     wc = WordCloud(background_color="white",
-                   font_path="~/Library/Fonts/Arial Unicode.ttf", prefer_horizontal=1)
+                   font_path="setting/NotoSansJP-Bold.otf", prefer_horizontal=1)
     wc.generate(text)
     plt.imshow(wc)
     plt.axis("off")
