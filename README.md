@@ -1,24 +1,27 @@
 
 # Table of Contents
 
-1.  [事前にやること](#org4a844e4)
-2.  [使い方](#orgc5ef180)
-    1.  [excel.py](#org1165adc)
-    2.  [`find_file.py`](#org09c0e4e)
-    3.  [pdf2txt.py](#orge341e4f)
-    4.  [`pdf_ocr.py`](#orgd20b8e8)
-    5.  [word2txt.py](#orga6380d9)
-    6.  [`logo_injection.py`](#org8f17568)
-    7.  [`prefix_image.py`](#org7dc2b95)
-    8.  [`resize_image.py`](#org86f8310)
-    9.  [whisper.py](#orgbc1af5c)
-    10. [pdf2wordcloud.py](#org895a988)
-    11. [txt2wordcloud.py](#org7fda382)
+1.  [事前にやること](#org3bb542d)
+2.  [使い方](#org4d6e86c)
+    1.  [excel.py](#org028e7ca)
+    2.  [`find_file.py`](#orgc97fb0d)
+    3.  [pdf2txt.py](#orgc96c4a2)
+    4.  [`pdf_ocr.py`](#org469016f)
+    5.  [word2txt.py](#org3b8f0c0)
+    6.  [`logo_injection.py`](#orga863bc0)
+    7.  [`prefix_image.py`](#orgafa576f)
+    8.  [`resize_image.py`](#orga3895cb)
+    9.  [whisper.py](#org16da336)
+    10. [pdf2wordcloud.py](#org04e689e)
+    11. [txt2wordcloud.py](#orgb6d638c)
 
 
-<a id="org4a844e4"></a>
+<a id="org3bb542d"></a>
 
 # 事前にやること
+
+    sudo apt update -y
+    sudo apt upgrade -y
 
     sudo apt-get install libjpeg-dev
     sudo apt-get install -y poppler-utils
@@ -26,22 +29,27 @@
 
 JUMAN++をインストールする
 
-    wget http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-1.02.tar.xz
-    tar xJvf jumanpp-1.02.tar.xz
-    cd jumanpp-1.02
-    ./configure
+    sudo apt install libboost-all-dev
+    wget https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz
+    tar xvf jumanpp-2.0.0-rc3.tar.xz
+    sudo apt install build-essential -y
+    sudo apt install cmake -y
+    cd jumanpp-2.0.0-rc3/
+    mkdir buil
+    cd build/
+    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
     make
     sudo make install
 
 その後requirements.txtをpip3 installする
 
 
-<a id="orgc5ef180"></a>
+<a id="org4d6e86c"></a>
 
 # 使い方
 
 
-<a id="org1165adc"></a>
+<a id="org028e7ca"></a>
 
 ## excel.py
 
@@ -50,7 +58,7 @@ excelを読み込み、データを取得したり書き込んだりします。
     python excel.py
 
 
-<a id="org09c0e4e"></a>
+<a id="orgc97fb0d"></a>
 
 ## `find_file.py`
 
@@ -61,7 +69,7 @@ l92-93を適宜変更してから実行
     python find_file.py
 
 
-<a id="orge341e4f"></a>
+<a id="orgc96c4a2"></a>
 
 ## pdf2txt.py
 
@@ -70,7 +78,7 @@ pdfをテキストに変換します。
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="orgd20b8e8"></a>
+<a id="org469016f"></a>
 
 ## `pdf_ocr.py`
 
@@ -81,7 +89,7 @@ l37を適宜変更してから実行
     python pdf_ocr.py
 
 
-<a id="orga6380d9"></a>
+<a id="org3b8f0c0"></a>
 
 ## word2txt.py
 
@@ -92,7 +100,7 @@ l5を適宜変更してから実行
     python word2txt.py
 
 
-<a id="org8f17568"></a>
+<a id="orga863bc0"></a>
 
 ## `logo_injection.py`
 
@@ -103,7 +111,7 @@ l47-l61を適宜変更してから実行
     python logo_injection.py
 
 
-<a id="org7dc2b95"></a>
+<a id="orgafa576f"></a>
 
 ## `prefix_image.py`
 
@@ -114,7 +122,7 @@ l16を適宜変更してから実行
     python prefix_image.py
 
 
-<a id="org86f8310"></a>
+<a id="orga3895cb"></a>
 
 ## `resize_image.py`
 
@@ -125,7 +133,7 @@ l10-12を適宜変更してから実行
     python resize_image.py
 
 
-<a id="orgbc1af5c"></a>
+<a id="org16da336"></a>
 
 ## whisper.py
 
@@ -136,7 +144,7 @@ l4を適宜変更してから実行
     python whisper.py
 
 
-<a id="org895a988"></a>
+<a id="org04e689e"></a>
 
 ## pdf2wordcloud.py
 
@@ -145,7 +153,7 @@ pdfをテキストに変換し、wordcloudを作成します。
     python pdf2wordcloud.py
 
 
-<a id="org7fda382"></a>
+<a id="orgb6d638c"></a>
 
 ## txt2wordcloud.py
 

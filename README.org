@@ -1,5 +1,9 @@
 * 事前にやること
 #+begin_src shell
+sudo apt update -y
+sudo apt upgrade -y
+#+end_src
+#+begin_src shell
 sudo apt-get install libjpeg-dev
 sudo apt-get install -y poppler-utils
 sudo apt -y install tesseract-ocr tesseract-ocr-jpn libtesseract-dev libleptonica-dev tesseract-ocr-script-jpan tesseract-ocr-script-jpan-vert 
@@ -7,10 +11,15 @@ sudo apt -y install tesseract-ocr tesseract-ocr-jpn libtesseract-dev libleptonic
 
 JUMAN++をインストールする
 #+begin_src shell
-wget http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-1.02.tar.xz
-tar xJvf jumanpp-1.02.tar.xz
-cd jumanpp-1.02
-./configure
+sudo apt install libboost-all-dev
+wget https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz
+tar xvf jumanpp-2.0.0-rc3.tar.xz
+sudo apt install build-essential -y
+sudo apt install cmake -y
+cd jumanpp-2.0.0-rc3/
+mkdir buil
+cd build/
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
 make
 sudo make install
 #+end_src
