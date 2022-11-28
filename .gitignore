@@ -3,7 +3,6 @@ logs/*.log
 config/model.vec
 GPATH
 GTAGS
-*.png
 GRTAGS
 bin/website/watch/migrations
 # Pycharm
