@@ -9,4 +9,4 @@ def scale_to_width(img, width):
 if __name__ == '__main__':
     img = Image.open('setting/logo.png')
     img = scale_to_width(img, 100)
-    img.save('image_resized.jpg')
+    img.save('image_resized.png')
