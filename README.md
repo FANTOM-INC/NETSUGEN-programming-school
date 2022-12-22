@@ -14,6 +14,7 @@
     9.  [whisper.py](#org16da336)
     10. [pdf2wordcloud.py](#org04e689e)
     11. [txt2wordcloud.py](#orgb6d638c)
+    12. [`blur_image.py`](#orgf7b93gc)
 
 
 <a id="org3bb542d"></a>
@@ -163,3 +164,10 @@ l7を適宜変更してから実行
 
     python txt2wordcloud.py
 
+
+<a id="orgf7b93gc"></a>
+## blur_image.py
+
+画像にガウスをかけてぼかします。（ブラー）
+
+    python blur_image.py
