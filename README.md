@@ -20,6 +20,7 @@
 <a id="org3bb542d"></a>
 
 # 事前にやること
+　（以下のコマンドを1行づつ実行する）
 
     sudo apt update -y
     sudo apt upgrade -y
@@ -28,7 +29,9 @@
     sudo apt-get install -y poppler-utils
     sudo apt -y install tesseract-ocr tesseract-ocr-jpn libtesseract-dev libleptonica-dev tesseract-ocr-script-jpan tesseract-ocr-script-jpan-vert 
 
-JUMAN++をインストールする
+形態素解析が必要なファイルを実行する時は、JUMAN++をインストールする
+
+（以下のコマンドを1行づつ実行する）
 
     sudo apt install libboost-all-dev
     wget https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz
@@ -44,6 +47,10 @@ JUMAN++をインストールする
 
 その後requirements.txtをpip3 installする
 
+（以下のコマンドを1行づつ実行する）
+
+    pip install --upgrade pip
+    pip install -r requirements.txt
 
 <a id="org4d6e86c"></a>
 
