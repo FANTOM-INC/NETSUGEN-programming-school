@@ -34,5 +34,5 @@ IoT機器からのデータの収集・監視・通知（soracom）、画像分�
     wc.generate(text)
     plt.imshow(wc)
     plt.axis("off")
-    plt.show()
+    # plt.show()
     plt.savefig("wordcloud.png")
