@@ -15,6 +15,7 @@
     10. [pdf2wordcloud.py](#org04e689e)
     11. [txt2wordcloud.py](#orgb6d638c)
     12. [`blur_image.py`](#orgf7b93gc)
+    13. [`grayscale_image.py`](#org0cb4a9d)
 
 
 <a id="org3bb542d"></a>
@@ -178,3 +179,11 @@ l7を適宜変更してから実行
 画像にガウスをかけてぼかします。（ブラー）
 
     python blur_image.py
+
+
+<a id="org0cb4a9d"></a>
+## grayscale_image.py
+
+画像を白黒に変換します。
+
+    python grayscale_image.py
