@@ -98,3 +98,16 @@ l7を適宜変更してから実行
 #+begin_src shell
 python txt2wordcloud.py
 #+end_src
+** =get_tweet.py=
+ツイートを取得します
+
+#+begin_src shell
+python get_tweet.py
+#+end_src
+** =tweet_to_csv.py=
+ツイートをcsvに変換します
+#+begin_src shell
+python tweet_to_csv.py
+#+end_src
+
+

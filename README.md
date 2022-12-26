@@ -1,27 +1,26 @@
 
 # Table of Contents
 
-1.  [事前にやること](#org3bb542d)
-2.  [使い方](#org4d6e86c)
-    1.  [excel.py](#org028e7ca)
-    2.  [`find_file.py`](#orgc97fb0d)
-    3.  [pdf2txt.py](#orgc96c4a2)
-    4.  [`pdf_ocr.py`](#org469016f)
-    5.  [word2txt.py](#org3b8f0c0)
-    6.  [`logo_injection.py`](#orga863bc0)
-    7.  [`prefix_image.py`](#orgafa576f)
-    8.  [`resize_image.py`](#orga3895cb)
-    9.  [whisper.py](#org16da336)
-    10. [pdf2wordcloud.py](#org04e689e)
-    11. [txt2wordcloud.py](#orgb6d638c)
-    12. [`blur_image.py`](#orgf7b93gc)
-    13. [`grayscale_image.py`](#org0cb4a9d)
+1.  [事前にやること](#org87b258c)
+2.  [使い方](#org3c14937)
+    1.  [excel.py](#org0786121)
+    2.  [`find_file.py`](#org9c2edbd)
+    3.  [pdf2txt.py](#org728accc)
+    4.  [`pdf_ocr.py`](#orge2cf3fd)
+    5.  [word2txt.py](#org2a71078)
+    6.  [`logo_injection.py`](#org462af0d)
+    7.  [`prefix_image.py`](#org1bd5315)
+    8.  [`resize_image.py`](#org3671aea)
+    9.  [whisper.py](#org51a431e)
+    10. [pdf2wordcloud.py](#org7c37b4f)
+    11. [txt2wordcloud.py](#org304f758)
+    12. [`get_tweet.py`](#orgf2cb4d8)
+    13. [`tweet_to_csv.py`](#orgeb0ff4e)
 
 
-<a id="org3bb542d"></a>
+<a id="org87b258c"></a>
 
 # 事前にやること
-　（以下のコマンドを1行づつ実行する）
 
     sudo apt update -y
     sudo apt upgrade -y
@@ -30,9 +29,7 @@
     sudo apt-get install -y poppler-utils
     sudo apt -y install tesseract-ocr tesseract-ocr-jpn libtesseract-dev libleptonica-dev tesseract-ocr-script-jpan tesseract-ocr-script-jpan-vert 
 
-形態素解析が必要なファイルを実行する時は、JUMAN++をインストールする
-
-（以下のコマンドを1行づつ実行する）
+JUMAN++をインストールする
 
     sudo apt install libboost-all-dev
     wget https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz
@@ -48,17 +45,13 @@
 
 その後requirements.txtをpip3 installする
 
-（以下のコマンドを1行づつ実行する）
 
-    pip install --upgrade pip
-    pip install -r requirements.txt
-
-<a id="org4d6e86c"></a>
+<a id="org3c14937"></a>
 
 # 使い方
 
 
-<a id="org028e7ca"></a>
+<a id="org0786121"></a>
 
 ## excel.py
 
@@ -67,7 +60,7 @@ excelを読み込み、データを取得したり書き込んだりします。
     python excel.py
 
 
-<a id="orgc97fb0d"></a>
+<a id="org9c2edbd"></a>
 
 ## `find_file.py`
 
@@ -78,7 +71,7 @@ l92-93を適宜変更してから実行
     python find_file.py
 
 
-<a id="orgc96c4a2"></a>
+<a id="org728accc"></a>
 
 ## pdf2txt.py
 
@@ -87,7 +80,7 @@ pdfをテキストに変換します。
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="org469016f"></a>
+<a id="orge2cf3fd"></a>
 
 ## `pdf_ocr.py`
 
@@ -98,7 +91,7 @@ l37を適宜変更してから実行
     python pdf_ocr.py
 
 
-<a id="org3b8f0c0"></a>
+<a id="org2a71078"></a>
 
 ## word2txt.py
 
@@ -109,7 +102,7 @@ l5を適宜変更してから実行
     python word2txt.py
 
 
-<a id="orga863bc0"></a>
+<a id="org462af0d"></a>
 
 ## `logo_injection.py`
 
@@ -120,7 +113,7 @@ l47-l61を適宜変更してから実行
     python logo_injection.py
 
 
-<a id="orgafa576f"></a>
+<a id="org1bd5315"></a>
 
 ## `prefix_image.py`
 
@@ -131,7 +124,7 @@ l16を適宜変更してから実行
     python prefix_image.py
 
 
-<a id="orga3895cb"></a>
+<a id="org3671aea"></a>
 
 ## `resize_image.py`
 
@@ -142,7 +135,7 @@ l10-12を適宜変更してから実行
     python resize_image.py
 
 
-<a id="org16da336"></a>
+<a id="org51a431e"></a>
 
 ## whisper.py
 
@@ -153,7 +146,7 @@ l4を適宜変更してから実行
     python whisper.py
 
 
-<a id="org04e689e"></a>
+<a id="org7c37b4f"></a>
 
 ## pdf2wordcloud.py
 
@@ -162,7 +155,7 @@ pdfをテキストに変換し、wordcloudを作成します。
     python pdf2wordcloud.py
 
 
-<a id="orgb6d638c"></a>
+<a id="org304f758"></a>
 
 ## txt2wordcloud.py
 
@@ -173,17 +166,20 @@ l7を適宜変更してから実行
     python txt2wordcloud.py
 
 
-<a id="orgf7b93gc"></a>
-## blur_image.py
+<a id="orgf2cb4d8"></a>
 
-画像にガウスをかけてぼかします。（ブラー）
+## `get_tweet.py`
 
-    python blur_image.py
+ツイートを取得します
+
+    python get_tweet.py
 
 
-<a id="org0cb4a9d"></a>
-## grayscale_image.py
+<a id="orgeb0ff4e"></a>
 
-画像を白黒に変換します。
+## `tweet_to_csv.py`
 
-    python grayscale_image.py
+ツイートをcsvに変換します
+
+    python tweet_to_csv.py
+
