@@ -10,3 +10,5 @@ pyknp
 matplotlib
 wordcloud
 tweepy
+pandas
+matplotlib

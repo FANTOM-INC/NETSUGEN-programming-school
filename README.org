@@ -103,11 +103,18 @@ python txt2wordcloud.py
 
 #+begin_src shell
 python get_tweet.py
+xxxx (検索したい文字列)
 #+end_src
 ** =tweet_to_csv.py=
 ツイートをcsvに変換します
 #+begin_src shell
 python tweet_to_csv.py
+xxxx (検索したい文字列)
+#+end_src
+** =plot_nikkei.py=
+日経平均のcsvを読み込み、グラフを作成します
+#+begin_src shell
+python plot_nikkei.py
 #+end_src
 
 
