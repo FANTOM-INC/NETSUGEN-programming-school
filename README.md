@@ -1,26 +1,26 @@
 
 # Table of Contents
 
-1.  [事前にやること](#org4393e9e)
-2.  [使い方](#org2c8971d)
-    1.  [excel.py](#org55e06d6)
-    2.  [`find_file.py`](#org6053e01)
-    3.  [pdf2txt.py](#org6b742bc)
-    4.  [`pdf_ocr.py`](#org208a5aa)
-    5.  [word2txt.py](#orgd3fdc91)
-    6.  [`logo_injection.py`](#orgbfa7c8f)
-    7.  [`prefix_image.py`](#org3908978)
-    8.  [`resize_image.py`](#orgd7877c2)
-    9.  [whisper.py](#orgd7dd5cb)
-    10. [pdf2wordcloud.py](#org777079e)
-    11. [txt2wordcloud.py](#org8c1710e)
-    12. [`get_tweet.py`](#org909dc78)
-    13. [`tweet_to_csv.py`](#org915754f)
-    14. [`plot_nikkei.py`](#orga837893)
-    15. [= plot<sub>nikkei</sub><sub>weekly.py</sub>=](#org9ecc83e)
+1.  [事前にやること](#orgbda80b8)
+2.  [使い方](#org8b32e41)
+    1.  [excel.py](#org80f8b9a)
+    2.  [`find_file.py`](#orgf04388d)
+    3.  [pdf2txt.py](#orgce11ce7)
+    4.  [`pdf_ocr.py`](#orgf03a15a)
+    5.  [word2txt.py](#orgab7faed)
+    6.  [`logo_injection.py`](#orgc038fac)
+    7.  [`prefix_image.py`](#org0a5e7ee)
+    8.  [`resize_image.py`](#org853653e)
+    9.  [whisper.py](#org786073a)
+    10. [pdf2wordcloud.py](#org7d1d3da)
+    11. [txt2wordcloud.py](#org93814bc)
+    12. [`get_tweet.py`](#orgbb72d2e)
+    13. [`tweet_to_csv.py`](#orgf0d2426)
+    14. [`plot_nikkei.py`](#org4cbcf27)
+    15. [`plot_nikkei_weekly.py`](#org919992e)
 
 
-<a id="org4393e9e"></a>
+<a id="orgbda80b8"></a>
 
 # 事前にやること
 
@@ -48,12 +48,12 @@ JUMAN++をインストールする
 その後requirements.txtをpip3 installする
 
 
-<a id="org2c8971d"></a>
+<a id="org8b32e41"></a>
 
 # 使い方
 
 
-<a id="org55e06d6"></a>
+<a id="org80f8b9a"></a>
 
 ## excel.py
 
@@ -62,7 +62,7 @@ excelを読み込み、データを取得したり書き込んだりします。
     python excel.py
 
 
-<a id="org6053e01"></a>
+<a id="orgf04388d"></a>
 
 ## `find_file.py`
 
@@ -73,7 +73,7 @@ l92-93を適宜変更してから実行
     python find_file.py
 
 
-<a id="org6b742bc"></a>
+<a id="orgce11ce7"></a>
 
 ## pdf2txt.py
 
@@ -82,7 +82,7 @@ pdfをテキストに変換します。
     python pdf2txt.py ./sample_file/sample.pdf
 
 
-<a id="org208a5aa"></a>
+<a id="orgf03a15a"></a>
 
 ## `pdf_ocr.py`
 
@@ -93,7 +93,7 @@ l37を適宜変更してから実行
     python pdf_ocr.py
 
 
-<a id="orgd3fdc91"></a>
+<a id="orgab7faed"></a>
 
 ## word2txt.py
 
@@ -104,7 +104,7 @@ l5を適宜変更してから実行
     python word2txt.py
 
 
-<a id="orgbfa7c8f"></a>
+<a id="orgc038fac"></a>
 
 ## `logo_injection.py`
 
@@ -115,7 +115,7 @@ l47-l61を適宜変更してから実行
     python logo_injection.py
 
 
-<a id="org3908978"></a>
+<a id="org0a5e7ee"></a>
 
 ## `prefix_image.py`
 
@@ -126,7 +126,7 @@ l16を適宜変更してから実行
     python prefix_image.py
 
 
-<a id="orgd7877c2"></a>
+<a id="org853653e"></a>
 
 ## `resize_image.py`
 
@@ -137,7 +137,7 @@ l10-12を適宜変更してから実行
     python resize_image.py
 
 
-<a id="orgd7dd5cb"></a>
+<a id="org786073a"></a>
 
 ## whisper.py
 
@@ -148,7 +148,7 @@ l4を適宜変更してから実行
     python whisper.py
 
 
-<a id="org777079e"></a>
+<a id="org7d1d3da"></a>
 
 ## pdf2wordcloud.py
 
@@ -157,7 +157,7 @@ pdfをテキストに変換し、wordcloudを作成します。
     python pdf2wordcloud.py
 
 
-<a id="org8c1710e"></a>
+<a id="org93814bc"></a>
 
 ## txt2wordcloud.py
 
@@ -168,7 +168,7 @@ l7を適宜変更してから実行
     python txt2wordcloud.py
 
 
-<a id="org909dc78"></a>
+<a id="orgbb72d2e"></a>
 
 ## `get_tweet.py`
 
@@ -178,7 +178,7 @@ l7を適宜変更してから実行
     xxxx (検索したい文字列)
 
 
-<a id="org915754f"></a>
+<a id="orgf0d2426"></a>
 
 ## `tweet_to_csv.py`
 
@@ -188,7 +188,7 @@ l7を適宜変更してから実行
     xxxx (検索したい文字列)
 
 
-<a id="orga837893"></a>
+<a id="org4cbcf27"></a>
 
 ## `plot_nikkei.py`
 
@@ -197,9 +197,9 @@ l7を適宜変更してから実行
     python plot_nikkei.py
 
 
-<a id="org9ecc83e"></a>
+<a id="org919992e"></a>
 
-## = plot<sub>nikkei</sub><sub>weekly.py</sub>=
+## `plot_nikkei_weekly.py`
 
 日経平均のcsvを読み込み、年毎に価格を平均化してグラフを作成します
 
