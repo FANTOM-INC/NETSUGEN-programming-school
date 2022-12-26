@@ -116,5 +116,10 @@ xxxx (検索したい文字列)
 #+begin_src shell
 python plot_nikkei.py
 #+end_src
+** = plot_nikkei_weekly.py=
+日経平均のcsvを読み込み、年毎に価格を平均化してグラフを作成します
+#+begin_src shell
+python plot_nikkei_weekly.py
+#+end_src
 
 
