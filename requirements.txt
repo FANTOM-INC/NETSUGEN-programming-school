@@ -12,3 +12,7 @@ wordcloud
 tweepy
 pandas
 matplotlib
+python-dotenv
+opencv-python
+qrcode
+google-api-python-client
